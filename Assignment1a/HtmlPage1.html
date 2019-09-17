@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1> Book your rock climbing experience today!</h1>
+    <p> Please fill out the following form to book your experience</p>
+    <form method="post" action=" =http://sandbox.bittsdevelopment.com/humber/httpdebug/acceptdata.php">
+        <div>
+            <label for="name">First Name:</label>
+            <input type="text" id="name" name="name" placeholder="Type your first name" />
+        </div>
+        <div>
+            <label for="last">Last Name:</label>
+            <input type="text" id="last" name="last" placeholder="Type your last name" />
+        </div>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" />
+        </div>
+        <label for="age">Age:</label>
+        <select id="age" name="age">
+            <option value="under18">Under 18</option>
+            <option value="19-29">19-29</option>
+            <option value="30-59">30-59</option>
+            <option value="60+">60+</option>
+        </select>
+        <fieldset>
+            <legend>Level of experience:</legend>
+            <div>
+                <input type="radio" id="beginner" name="level" />
+                <label for="beginner">Beginner</label>
+                <input type="radio" id="medium" name="level" />
+                <label for="medium">Medium</label>
+                <input type="radio" id="experienced" name="level" />
+                <label for="experienced">Experienced</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Preferred booking day:</legend>
+            <div>
+                <input type="checkbox" value="monday" name="day" />
+                <label for="monday">Monday</label>
+            </div>
+            <div>
+                <input type="checkbox" value="tuesday" name="day" />
+                <label for="tuesday">Tuesday</label>
+            </div>
+            <div>
+                <input type="checkbox" value="wednesday" name="day" />
+                <label for="wednesday">Wednesday</label>
+            </div>
+            <div>
+                <input type="checkbox" value="thursday" name="day" />
+                <label for="thursday">Thursday</label>
+            </div>
+            <div>
+                <input type="checkbox" value="friday" name="day" />
+                <label for="friday">Friday</label>
+            </div>
+            <div>
+                <input type="checkbox" value="saturday" name="day" />
+                <label for="saturday">Saturday</label>
+            </div>
+            <div>
+                <input type="checkbox" value="sunday" name="day" />
+                <label for="sunday">Sunday</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Preferred booking time:</legend>
+            <div>
+                <input type="checkbox" value="10-11am" name="hour" />
+                <label for="10-11am">10-11am</label>
+            </div>
+            <div>
+                <input type="checkbox" value="11am-12pm" name="hour" />
+                <label for="11am-12pm">11am-12pm</label>
+            </div>
+            <div>
+                <input type="checkbox" value="12-1pm" name="hour" />
+                <label for="12-1pm">12-1pm</label>
+            </div>
+            <div>
+                <input type="checkbox" value="1-2pm" name="hour" />
+                <label for="1-2pm">1-2pm</label>
+            </div>
+            <div>
+                <input type="checkbox" value="2-3pm" name="hour" />
+                <label for="2-3pm">2-3pm</label>
+            </div>
+            <div>
+                <input type="checkbox" value="3-4pm" name="hour" />
+                <label for="3-4pm">3-4pm</label>
+            </div>
+            <div>
+                <input type="checkbox" value="4-5pm" name="hour" />
+                <label for="4-5pm">4-5pm</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Suscribe to receive more offers:</legend>
+            <div>
+                <input type="radio" id="yes" name="yesno" />
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="yesno" />
+                <label for="no">No</label>
+            </div>
+        </fieldset>
+        <button type="submit" id="submit" name="submit">Submit</button>
+
+    </form>
+</body>
+</html>
