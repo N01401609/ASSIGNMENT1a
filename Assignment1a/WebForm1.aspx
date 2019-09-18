@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Rock Climbing Booking</title>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -16,99 +16,84 @@
             </section>
             
             <section>
-                <label>First Name:</label>
-                <asp:TextBox runat="server" ID="name" ></asp:TextBox>
+                <h2>Personal Information</h2>
+                <div>
+                    <label>First Name:</label>
+                    <asp:TextBox runat="server" ID="name" ></asp:TextBox>
+
+                </div>
+                <div>
+                    <label>Last Name:</label>
+                    <asp:TextBox runat="server" ID="last" ></asp:TextBox>
+                </div>
+                <div>
+                    <label>E-mail:</label>
+                    <asp:TextBox runat="server" ID="email" ></asp:TextBox>
+                </div>
+                <div>
+                    <label>Age(must be 18+):</label>
+                    <asp:TextBox runat="server" ID="age" ></asp:TextBox>
+                </div>    
             </section>
             <section>
-                <label>Last Name:</label>
-                <asp:TextBox runat="server" ID="last" ></asp:TextBox>
-            </section>
-            <section>
-                <label>E-mail:</label>
-                <asp:TextBox runat="server" ID="email" ></asp:TextBox>
+                <h2>Choose your package</h2>
+                <fieldset>
+                    <legend>Package Options</legend>
+                    <asp:RadioButtonList runat="server" ID="package">
+                        <asp:ListItem Text="Student Package" Value="student"></asp:ListItem>
+                        <asp:ListItem Text="Adult Package" Value="adult"></asp:ListItem>
+                        <asp:ListItem Text="VIP Package" Value="vip"></asp:ListItem>
+
+                    </asp:RadioButtonList>
+
+                </fieldset>
 
             </section>
             <section>
-                <label>Age:</label>
-                <asp:DropDownList runat="server" ID="age">
-                    <asp:ListItem Text="Under 18" Value="under18"></asp:ListItem>
-                    <asp:ListItem Text="19-29" Value="19-29"></asp:ListItem>
-                        <asp:ListItem Text="30-59" Value="30-59"></asp:ListItem>
-                <asp:ListItem Text="60+" Value="60+"></asp:ListItem>
+                <h2>Choose your date</h2>
+                <label>Select a preferred booking day:</label>
+                <asp:DropDownList runat="server" ID="day">
+                    <asp:ListItem Text="Monday" Value="monday"></asp:ListItem>
+                    <asp:ListItem Text="Tuesday" Value="tuesday"></asp:ListItem>
+                    <asp:ListItem Text="Wednesday" Value="wednesday"></asp:ListItem>
+                    <asp:ListItem Text="Thursday" Value="thursday"></asp:ListItem>
+                    <asp:ListItem Text="Friday" Value="friday"></asp:ListItem>
+                    <asp:ListItem Text="Saturday" Value="saturday"></asp:ListItem>
+                    <asp:ListItem Text="Sunday" Value="sunday"></asp:ListItem>
                 </asp:DropDownList>
+                <fieldset>
+                    <legend>Preferred booking time</legend>
+                    <asp:CheckBoxList runat="server" ID="time" >
+                        <asp:ListItem Text="10-11am" Value="10-11am"></asp:ListItem>
+                        <asp:ListItem Text="11am-12pm" Value="11am-12pm"></asp:ListItem>
+                        <asp:ListItem Text="1-2pm" Value="1-2pm"></asp:ListItem>
+                        <asp:ListItem Text="2-3pm" Value="2-3pm"></asp:ListItem>
+                        <asp:ListItem Text="3-4pm" Value="3-4pm,"></asp:ListItem>
+                        <asp:ListItem Text="4-5pm" Value="4-5pm"></asp:ListItem>
+
+                    </asp:CheckBoxList>
+
+                </fieldset>
+
             </section>
-            <fieldset>
-                <legend>Level of Experience:</legend>
-                <asp:RadioButtonList runat="server" ID="experience">
-                            <asp:ListItem Text="Beginner" Value="beginner"></asp:ListItem>
-                            <asp:ListItem Text="Medium" Value="medium"></asp:ListItem>
-                            <asp:ListItem Text="Experienced" Value="experienced"></asp:ListItem>
-                </asp:RadioButtonList>
-            </fieldset>
-            <fieldset>
-                <legend>Preferred booking day:</legend>
-                <div>
-                    <input type="checkbox" value="monday" id="monday" name="monday"/>
-                    <label for="monday">Monday</label>
-                </div>
-                <div>
-                    <input type="checkbox" value="tuesday" id="tuesday" name="tuesday"/>
-                    <label for="tuesday">Tuesday</label>
-                </div>
-                <div>
-                    <input type="checkbox" value="wednesday" id="wednesday" name="wednesday"/>
-                    <label for="wednesday">Wednesday</label>
-                </div>
-                <div>
-                    <input type="checkbox" value="thursday" id="thursday" name="thursday"/>
-                    <label for="thursday">Thursday</label>
-                </div>
-                <div>
-                    <input type="checkbox" value="friday" id="friday" name="friday"/>
-                    <label for="friday">Friday</label>
-                </div>
-                <div>
-                    <input type="checkbox" value="saturday" id="saturday" name="saturday"/>
-                    <label for="saturday">Saturday</label>
-                </div>
-                <div>
-                    <input type="checkbox" value="sunday" id="sunday" name="sunday"/>
-                    <label for="sunday">Saturday</label>
-                </div>
+            <section>
+                <h2>Suscribe!</h2>
+                <fieldset>
+                    <legend>Would you like us to send you special offers to your registered email address?</legend>
+                    <asp:RadioButtonList runat="server" ID="suscribe">
+                        <asp:ListItem Text="Yes" Value="yes"></asp:ListItem>
+                        <asp:ListItem Text="No" Value="no"></asp:ListItem>
 
-            </fieldset>
-            <fieldset>
-                <legend>Preferred booking time:</legend>
-                <div>
-                    <input type="checkbox" value="10-11am" id="10-11am" name="10-11am"/>
-                    <label for="10-11am">10-11am</label>
-                </div>
-                <div>
-                    <input type="checkbox" value="11am-12pm" id="11am-12pm" name="11am-12pm"/>
-                    <label for="11am-12pm">11am-12pm</label>
-                </div>
-                <div>
-                    <input type="checkbox" value="12-1pm" id="12-1pm" name="12-1pm"/>
-                    <label for="12-1pm">12-1pm</label>
-                </div>
-                <div>
-                    <input type="checkbox" value="1-2pm" id="1-2pm" name="1-2pm"/>
-                    <label for="1-2pm">1-2pm</label>
-                </div>
-                <div>
-                    <input type="checkbox" value="2-3pm" id="2-3pm" name="2-3pm"/>
-                    <label for="2-3pm">2-3pm</label>
-                </div>
-                <div>
-                    <input type="checkbox" value="3-4pm" id="3-4pm" name="3-4pm"/>
-                    <label for="3-4pm">3-4pm</label>
-                </div>
-                <div>
-                    <input type="checkbox" value="4-5pm" id="4-5pm" name="4-5pm"/>
-                    <label for="4-5pm">4-5pm</label>
-                </div>
+                    </asp:RadioButtonList>
 
-            </fieldset>
+                </fieldset>
+
+            </section>
+            <section>
+                <asp:Button runat="server" Text="Submit" ID="submit" />
+
+            </section>     
+
         </main>
     </form>
 </body>
