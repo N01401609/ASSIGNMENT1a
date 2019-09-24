@@ -22,84 +22,93 @@ namespace Assignment1a {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// name control.
+        /// climber_first_name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox name;
+        protected global::System.Web.UI.WebControls.TextBox climber_first_name;
         
         /// <summary>
-        /// last control.
+        /// climber_last_name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox last;
+        protected global::System.Web.UI.WebControls.TextBox climber_last_name;
         
         /// <summary>
-        /// email control.
+        /// climber_email control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox email;
+        protected global::System.Web.UI.WebControls.TextBox climber_email;
         
         /// <summary>
-        /// age control.
+        /// climber_age control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox age;
+        protected global::System.Web.UI.WebControls.TextBox climber_age;
         
         /// <summary>
-        /// package control.
+        /// package_choice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList package;
+        protected global::System.Web.UI.WebControls.RadioButtonList package_choice;
         
         /// <summary>
-        /// day control.
+        /// booking_day control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList day;
+        protected global::System.Web.UI.WebControls.DropDownList booking_day;
         
         /// <summary>
-        /// time control.
+        /// booking_time control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList time;
+        protected global::System.Web.UI.WebControls.RadioButtonList booking_time;
         
         /// <summary>
-        /// suscribe control.
+        /// suscribe_answer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList suscribe;
+        protected global::System.Web.UI.WebControls.RadioButtonList suscribe_answer;
         
         /// <summary>
-        /// submit control.
+        /// suscribe_options control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button submit;
+        protected global::System.Web.UI.WebControls.CheckBoxList suscribe_options;
+        
+        /// <summary>
+        /// summarybox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl summarybox;
     }
 }
