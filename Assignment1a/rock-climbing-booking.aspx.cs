@@ -61,7 +61,7 @@ namespace Assignment1a
                     summarybox.InnerHtml += " Email: " + Climber_Email + "<br>";
                     summarybox.InnerHtml += " Age: " + Climber_Age + "<br>";
                     summarybox.InnerHtml += " Package Choice: " + Package_Choice + "<br>";
-                    summarybox.InnerHtml += " Booking Day and Time: " + Booking_Day + " " + Booking_Time + "<br>";
+                    summarybox.InnerHtml += " Booking Day and Time: " + Booking_Day + " at " + Booking_Time + "<br>";
                     summarybox.InnerHtml += " Suscription: " + Suscribe_Answer + "<br>";
 
                     

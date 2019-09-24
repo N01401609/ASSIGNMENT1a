@@ -33,12 +33,14 @@
                     <div>
                         <label>E-mail:</label>
                         <asp:TextBox runat="server" ID="climber_email" ></asp:TextBox>
-                        <%--//ValidationExpression email reference: Java T Point. Java T Point. Sept 21, 2019. Link:https://www.javatpoint.com/asp-net-web-form-regular-expression-validator//--%>
+                        <asp:RequiredFieldValidator  runat="server" EnableClientScript="true" ErrorMessage="Please enter your email" ControlToValidate="climber_email"></asp:RequiredFieldValidator>
+                        <%/*ValidationExpression email reference: Java T Point. Java T Point. Sept 21, 2019. Link:https://www.javatpoint.com/asp-net-web-form-regular-expression-validator//*/%>
                         <asp:RegularExpressionValidator runat="server" EnableClientScript="true" ControlToValidate="climber_email" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ErrorMessage="Please enter a valid email"></asp:RegularExpressionValidator>
                     </div>
                     <div>
                         <label>Age(18-70):</label>
                         <asp:TextBox runat="server" ID="climber_age" ></asp:TextBox>
+                        <asp:RequiredFieldValidator  runat="server" EnableClientScript="true" ErrorMessage="Please enter your age" ControlToValidate="climber_age"></asp:RequiredFieldValidator>
                         <asp:RangeValidator runat="server" EnableClientScript="true" ControlToValidate="climber_age" ErrorMessage="Sorry you must be between 18 and 70 to sign up for rock climbing" MinimumValue="18" MaximumValue="70" ></asp:RangeValidator>
                     </div>
 
@@ -79,13 +81,13 @@
                 <fieldset>
                     <legend>Preferred booking time</legend>
                     <asp:RadioButtonList runat="server" ID="booking_time" >
-                        <asp:ListItem Text="10:00-11:00" Value="10:00-11:00"></asp:ListItem>
-                        <asp:ListItem Text="11:00-12:00" Value="11:00-12:00"></asp:ListItem>
-                        <asp:ListItem Text="12:00-13:00" Value="12:00-13:00"></asp:ListItem>
-                        <asp:ListItem Text="13:00-14:00" Value="13:00-14:00"></asp:ListItem>
-                        <asp:ListItem Text="14:00-15:00" Value="14:00-15:00"></asp:ListItem>
-                        <asp:ListItem Text="15:00-16:00" Value="15:00-16:00"></asp:ListItem>
-                        <asp:ListItem Text="16:00-17:00" Value="16:00-17:00"></asp:ListItem>
+                        <asp:ListItem Text="10:00-11:00" Value="1000"></asp:ListItem>
+                        <asp:ListItem Text="11:00-12:00" Value="1100"></asp:ListItem>
+                        <asp:ListItem Text="12:00-13:00" Value="1200"></asp:ListItem>
+                        <asp:ListItem Text="13:00-14:00" Value="1300"></asp:ListItem>
+                        <asp:ListItem Text="14:00-15:00" Value="1400"></asp:ListItem>
+                        <asp:ListItem Text="15:00-16:00" Value="1500"></asp:ListItem>
+                        <asp:ListItem Text="16:00-17:00" Value="1600"></asp:ListItem>
 
                     </asp:RadioButtonList>
                     <asp:RequiredFieldValidator  runat="server" EnableClientScript="true" ErrorMessage="Please select a booking time" ControlToValidate="booking_time"></asp:RequiredFieldValidator>
