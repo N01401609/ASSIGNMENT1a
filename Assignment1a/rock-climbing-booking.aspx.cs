@@ -36,6 +36,9 @@ namespace Assignment1a
                     summarybox.InnerHtml += "You choose the " + Package_Choice + ", your total is: ";
 
                     //Statement determines how much climber pays based on the package selected
+                    //Student Package is $15
+                    //Adult Package is $20
+                    //VIP Package is $30
                     if (Package_Choice == "Student Package")
                     {
                         summarybox.InnerHtml += "$" + 15 + "<br>";
